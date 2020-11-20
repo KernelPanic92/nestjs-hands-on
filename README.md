@@ -14,9 +14,6 @@ Simple hands on tutorial on NestJS
 ## Tests
 
 - run `npm run test`
-- run `npm run start`
-- navigate to [http://localhost:3000](http://localhost:3000)
-- see "Hello world" message
 
 ## what's next
 
