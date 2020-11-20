@@ -4,21 +4,23 @@ Simple hands on tutorial on NestJS
 
 ## Before start
 
-- `git checkout step1`
+- `git reset --hard`
+- `git checkout step2`
 
 ## Tasks
 
-- run `npm install`
+- use typeorm annotations to decorate the todo entity [src/todo/entities/todo.entity.ts](src/todo/entities/todo.entity.ts)
 
 ## Tests
 
+- run `npm run test`
 - run `npm run start`
 - navigate to [http://localhost:3000](http://localhost:3000)
 - see "Hello world" message
 
 ## what's next
 
-[:point_right: Step 2](https://github.com/KernelPanic92/nestjs-hands-on/tree/step2)
+[:point_right: Step 3](https://github.com/KernelPanic92/nestjs-hands-on/tree/step3)
 
 ## Authors
 
