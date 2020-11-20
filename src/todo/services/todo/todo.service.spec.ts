@@ -73,7 +73,7 @@ describe('TodoService', () => {
 
     await service.update(1, new UpdateTodoDto());
 
-    expect(repository.save).toBe(1);
+    expect(repository.save).toBeCalledTimes(1);
   });
 
   it('should delete todo', async () => {
@@ -83,7 +83,7 @@ describe('TodoService', () => {
 
     await service.remove(1);
 
-    expect(repository.remove).toBe(1);
+    expect(repository.remove).toBeCalledTimes(1);
   });
 
   it('should throws exception when todo not exists on remove', async () => {
