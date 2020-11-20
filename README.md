@@ -5,22 +5,19 @@ Simple hands on tutorial on NestJS
 ## Before start
 
 - `git reset --hard`
-- `git checkout step2`
+- `git checkout step3`
 
 ## Tasks
 
-- use typeorm annotations to decorate the todo entity [src/todo/entities/todo.entity.ts](src/todo/entities/todo.entity.ts)
+- implements findOne and remove in TodoService [src/todo/services/todo/todo.service.ts](src/todo/services/todo/todo.service.ts)
 
 ## Tests
 
 - run `npm run test`
-- run `npm run start`
-- navigate to [http://localhost:3000](http://localhost:3000)
-- see "Hello world" message
 
 ## what's next
 
-[:point_right: Step 3](https://github.com/KernelPanic92/nestjs-hands-on/tree/step3)
+[:point_right: Step 4](https://github.com/KernelPanic92/nestjs-hands-on/tree/step4)
 
 ## Authors
 
