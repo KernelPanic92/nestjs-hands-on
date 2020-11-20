@@ -1,12 +1,11 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-// TODO: map as Entity with table name 'todos'. see https://docs.nestjs.com/techniques/database#repository-pattern
+@Entity({ name: 'todos' })
 export class Todo {
-  // TODO: map attribute id as primary key with autoincrement. see https://docs.nestjs.com/techniques/database#repository-pattern
-  // TODO: specify 'id' name. see https://docs.nestjs.com/techniques/database#repository-pattern
+  @PrimaryGeneratedColumn({ name: 'id' })
   public id: number;
 
-  // TODO: map attribute to 'title' column. see https://docs.nestjs.com/techniques/database#repository-pattern
+  @Column({ name: 'title' })
   public title: string;
 
   @Column({ name: 'completed' })
