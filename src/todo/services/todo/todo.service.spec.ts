@@ -37,41 +37,27 @@ describe('TodoService', () => {
   });
 
   it('should create todo', async () => {
-    let calls = 0;
-
-    repository.save.mockImplementation((value) => {
-      calls++;
-      return Promise.resolve(value);
-    });
+    repository.save.mockReturnValue(Promise.resolve(new Todo('title')));
 
     await service.create(new CreateTodoDto({ title: 'title' }));
-    expect(calls).toBe(1);
+
+    expect(repository.save).toBeCalledTimes(1);
   });
 
   it('should find all todos', async () => {
-    let calls = 0;
-
-    repository.find.mockImplementation(() => {
-      calls++;
-      return Promise.resolve([]);
-    });
+    repository.find.mockReturnValue(Promise.resolve([]));
 
     await service.findAll();
 
-    expect(calls).toBe(1);
+    expect(repository.find).toBeCalledTimes(1);
   });
 
   it('should find one', async () => {
-    let calls = 0;
-
-    repository.findOne.mockImplementation(() => {
-      calls++;
-      return Promise.resolve(new Todo('title'));
-    });
+    repository.findOne.mockReturnValue(Promise.resolve(new Todo('title')));
 
     await service.findOne(1);
 
-    expect(calls).toBe(1);
+    expect(repository.findOne).toBeCalledTimes(1);
   });
 
   it('should throws error when todo not exists', async () => {
@@ -81,30 +67,23 @@ describe('TodoService', () => {
   });
 
   it('should update todo', async () => {
-    let calls = 0;
-
-    repository.findOne.mockReturnValue(new Todo('title'));
-    repository.save.mockImplementation((value) => {
-      calls++;
-      return Promise.resolve(value);
-    });
+    const todo = new Todo('title');
+    repository.findOne.mockReturnValue(Promise.resolve(todo));
+    repository.save.mockReturnValue(todo);
 
     await service.update(1, new UpdateTodoDto());
 
-    expect(calls).toBe(1);
+    expect(repository.save).toBe(1);
   });
 
   it('should delete todo', async () => {
-    let calls = 0;
-
-    repository.findOne.mockReturnValue(Promise.resolve(new Todo('title')));
-    repository.remove.mockImplementation((value) => {
-      calls++;
-      return Promise.resolve(value);
-    });
+    const todo = new Todo('title');
+    repository.findOne.mockReturnValue(Promise.resolve(todo));
+    repository.remove.mockReturnValue(Promise.resolve(todo));
 
     await service.remove(1);
-    expect(calls).toBe(1);
+
+    expect(repository.remove).toBe(1);
   });
 
   it('should throws exception when todo not exists on remove', async () => {
