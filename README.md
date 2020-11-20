@@ -9,15 +9,17 @@ Simple hands on tutorial on NestJS
 
 ## Tasks
 
-- implements findOne and remove in TodoService [src/todo/services/todo/todo.service.ts](src/todo/services/todo/todo.service.ts)
+- call service methods in rest controller [src/todo/todo.controller.ts](src/todo/todo.controller.ts)
+- (OPTIONAL) find the bug in API :bug:
 
 ## Tests
 
 - run `npm run test`
+- (OPTIONAL) `npm run test:e2e`
 
 ## what's next
 
-[:point_right: Step 4](https://github.com/KernelPanic92/nestjs-hands-on/tree/step4)
+[:point_right: working api](https://github.com/KernelPanic92/nestjs-hands-on/tree/step5)
 
 ## Authors
 
