@@ -5,7 +5,7 @@ Simple hands on tutorial on NestJS
 ## Before start
 
 - `git reset --hard`
-- `git checkout step3`
+- `git checkout step4`
 
 ## Tasks
 
