@@ -18,29 +18,29 @@ export class TodoController {
 
   @Post()
   public create(@Body() createTodoDto: CreateTodoDto): Promise<TodoDto> {
-    return this.todoService.create(createTodoDto);
+    return null;
   }
 
   @Get()
   public findAll(): Promise<TodoDto[]> {
-    return this.todoService.findAll();
+    return null;
   }
 
   @Get(':id')
   public findOne(@Param('id') id: string): Promise<TodoDto> {
-    return this.todoService.findOne(+id);
+    return null;
   }
 
-  @Put(':id')
+  @Put('id')
   public update(
     @Param('id') id: string,
     @Body() updateTodoDto: UpdateTodoDto,
   ): Promise<TodoDto> {
-    return this.todoService.update(+id, updateTodoDto);
+    return null;
   }
 
   @Delete(':id')
   public remove(@Param('id') id: string): Promise<TodoDto> {
-    return this.todoService.remove(+id);
+    return null;
   }
 }
