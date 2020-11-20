@@ -9,19 +9,19 @@ export class TodoService {
     return 'This action adds a new todo';
   }
 
-  public findAll() {
-    return `This action returns all todo`;
+  public findAll(): TodoDto[] {
+    return [];
   }
 
   public findOne(id: number): TodoDto {
-    return `This action returns a #${id} todo`;
+    return null;
   }
 
   public update(id: number, updateTodoDto: UpdateTodoDto): TodoDto {
-    return `This action updates a #${id} todo`;
+    return null;
   }
 
   public remove(id: number): TodoDto {
-    return `This action removes a #${id} todo`;
+    return null;
   }
 }

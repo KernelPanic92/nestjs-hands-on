@@ -8,11 +8,13 @@ import * as path from 'path';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-    type: 'sqlite',
-    autoLoadEntities: true,
-    synchronize: true,
-    database: path.resolve(__dirname, '..', 'db.sqlite')
-  }),TodoModule],
+      type: 'sqlite',
+      autoLoadEntities: true,
+      synchronize: true,
+      database: path.resolve(__dirname, '..', 'db.sqlite'),
+    }),
+    TodoModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
