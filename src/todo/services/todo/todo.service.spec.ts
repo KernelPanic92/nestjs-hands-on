@@ -94,12 +94,6 @@ describe('TodoService', () => {
     expect(calls).toBe(1);
   });
 
-  it('should throws exception when todo not exists', async () => {
-    repository.findOne.mockReturnValue(Promise.resolve(null));
-
-    await expect(service.findOne(1)).rejects.toThrow('Not Found');
-  });
-
   it('should delete todo', async () => {
     let calls = 0;
 
