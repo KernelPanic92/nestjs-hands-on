@@ -10,10 +10,10 @@ To be able to develop in this tutorial you need some tools:
 - nestjs-cli `npm i -g @nestjs/cli`
 - Development IDE preferred, visual studio code recommended [visual studio code](https://code.visualstudio.com/)
 
-[First step :point_right:](https://github.com/KernelPanic92/nestjs-hands-on/tree/step1/README.md)
+[:point_right: First step](https://github.com/KernelPanic92/nestjs-hands-on/tree/step1/README.md)
 
 ## Authors
 
 [Iacopo Ciao](http://github.com/KernelPanic92)
 
-Sponsored by [Plansoft](www.plansoft.it) [:octocat:](https://github.com/plansoft-it/)
+Sponsored by [Plansoft :octocat:](https://github.com/plansoft-it/)
