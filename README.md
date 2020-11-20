@@ -5,21 +5,13 @@ Simple hands on tutorial on NestJS
 ## Before start
 
 - `git reset --hard`
-- `git checkout step3`
+- `git checkout step5`
 
-## Tasks
+# FINISH!
 
-- call service methods in rest controller [src/todo/todo.controller.ts](src/todo/todo.controller.ts)
-- (OPTIONAL) find the bug in API :bug:
+## How to run
 
-## Tests
-
-- run `npm run test`
-- (OPTIONAL) `npm run test:e2e`
-
-## what's next
-
-[:point_right: working api](https://github.com/KernelPanic92/nestjs-hands-on/tree/step5)
+`npm run start`
 
 ## Authors
 
