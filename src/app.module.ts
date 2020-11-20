@@ -11,6 +11,7 @@ import * as path from 'path';
       type: 'sqlite',
       autoLoadEntities: true,
       synchronize: true,
+      dropSchema: true,
       database: path.resolve(__dirname, '..', 'db.sqlite'),
     }),
     TodoModule,

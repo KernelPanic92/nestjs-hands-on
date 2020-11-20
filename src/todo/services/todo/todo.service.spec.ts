@@ -1,14 +1,12 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Todo } from '../../entities/todo.entity';
-import {
-  MockType,
-  repositoryMockFactory,
-} from '../../../../test/utils/repository.mock';
+import { repositoryMockFactory } from '../../../../test/mock/repository.mock';
 import { Repository } from 'typeorm';
 import { TodoMapperService } from '../todo-mapper/todo-mapper.service';
 import { TodoService } from './todo.service';
 import { CreateTodoDto, UpdateTodoDto } from '../../dto';
+import { MockType } from '../../../../test/utils/mock-type.mock';
 
 describe('TodoService', () => {
   let service: TodoService;

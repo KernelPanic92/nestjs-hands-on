@@ -1,8 +1,5 @@
 import { Repository } from 'typeorm';
-
-export type MockType<T> = {
-  [P in keyof T]: jest.Mock<unknown>;
-};
+import { MockType } from '../utils/mock-type.mock';
 
 export const repositoryMockFactory: <T>() => MockType<Repository<T>> = jest.fn(
   () => ({
