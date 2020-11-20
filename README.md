@@ -2,16 +2,23 @@
 
 Simple hands on tutorial on NestJS
 
-## Requirements
+## Before start
 
-To be able to develop in this tutorial you need some tools:
+- `git reset --hard`
+- `git checkout step1`
 
-- [Node](https://nodejs.org) (tested up to version: 14.15.1 LTS)
-- nestjs-cli `npm i -g @nestjs/cli`
-- Development IDE preferred, visual studio code recommended [visual studio code](https://code.visualstudio.com/)
+## Tasks
 
-[:point_right: First step](https://github.com/KernelPanic92/nestjs-hands-on/tree/step1)
+- run `npm install`
 
+## Tests
+
+- run `npm run start`
+- navigate to [http://localhost:3000](http://localhost:3000)
+- see "Hello world" message
+
+
+[:point_right: Step 2](https://github.com/KernelPanic92/nestjs-hands-on/tree/step2)
 ## Authors
 
 [Iacopo Ciao](http://github.com/KernelPanic92)
