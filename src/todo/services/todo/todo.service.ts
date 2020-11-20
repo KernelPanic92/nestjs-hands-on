@@ -25,8 +25,9 @@ export class TodoService {
   }
 
   public async findOne(id: number): Promise<TodoDto> {
-    // TODO: to implement
-    throw new Error('implement method');
+    const todo = await this.repository.findOne(id);
+    if (!todo) throw new NotFoundException();
+    return this.mapper.modelToDto(todo);
   }
 
   public async update(
@@ -48,7 +49,12 @@ export class TodoService {
   }
 
   public async remove(id: number): Promise<TodoDto> {
-    // TODO: to implement
-    throw new Error('implement method');
+    let todo = await this.repository.findOne(id);
+
+    if (!todo) throw new NotFoundException();
+
+    todo = await this.repository.remove(todo);
+
+    return todo;
   }
 }
