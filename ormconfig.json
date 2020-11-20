@@ -1,0 +1,6 @@
+{
+  "type": "sqlite",
+  "autoLoadEntities": true,
+  "synchronize": true,
+  "database": "db.sqlite"
+}
