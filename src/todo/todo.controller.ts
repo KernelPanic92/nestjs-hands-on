@@ -18,17 +18,20 @@ export class TodoController {
 
   @Post()
   public create(@Body() createTodoDto: CreateTodoDto): Promise<TodoDto> {
-    return null;
+    // TODO: to implement
+    throw new Error('implement method');
   }
 
   @Get()
   public findAll(): Promise<TodoDto[]> {
-    return null;
+    // TODO: to implement
+    throw new Error('implement method');
   }
 
   @Get(':id')
   public findOne(@Param('id') id: string): Promise<TodoDto> {
-    return null;
+    // TODO: to implement
+    throw new Error('implement method');
   }
 
   @Put('id')
@@ -36,11 +39,12 @@ export class TodoController {
     @Param('id') id: string,
     @Body() updateTodoDto: UpdateTodoDto,
   ): Promise<TodoDto> {
-    return null;
+    return this.todoService.update(+id, updateTodoDto);
   }
 
   @Delete(':id')
   public remove(@Param('id') id: string): Promise<TodoDto> {
-    return null;
+    // TODO: to implement
+    throw new Error('implement method');
   }
 }
