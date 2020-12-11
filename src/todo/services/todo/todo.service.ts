@@ -55,6 +55,6 @@ export class TodoService {
 
     todo = await this.repository.remove(todo);
 
-    return todo;
+    return this.mapper.modelToDto(todo);
   }
 }
